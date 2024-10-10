@@ -20,9 +20,6 @@ deployment stack, combined with value of the newest iteration's `actionOnUnmanag
 the lifecycle of the resources managed by the deployment stack. When a deployment stack is updated,
 the new set of managed resources will be determined by the resources defined in the template.
 
-> IMPORTANT: 
-> Deployment stacks is currently in _public preview_.
-
 # Docs
 + [QuickStart: Deployment Stacks](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-deployment-stacks?tabs=azure-cli%2CCLI)
 + [QuickStart: Deployment Stacks & Template Specs](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell)
