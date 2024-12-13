@@ -226,15 +226,6 @@ New-AzSubscriptionDeploymentStack -Name 'mySubStack' `
    -DenySettingsMode 'None'
 ```
 
-ABS
-```powershell
-New-AzSubscriptionDeploymentStack -Name 'mySubStack' `
-   -Location 'eastus' `
-   -TemplateFile './main.bicep' `
-   -DeploymentResourceGroupName 'joel_carter' `
-   -DenySettingsMode 'None'
-```
-
 Use the az stack group create command to create a deployment stack at the resource group scope. Here's another example:
 
 ```azurecli
@@ -338,7 +329,7 @@ To manage deployment stack deny assignments with Azure PowerShell, include one o
 - `DenyDelete`: Prevent delete operations
 - `DenyWriteAndDelete`: Prevent deletion or modification
 
-The Azure PowerShell interface also includes these parameters to customize the deny assignment:
+The Azure PowerShell interface also includes parameters to customize the deny assignment:
 
 - `-DenySettingsExcludedPrincipal`
 - `-DenySettingsApplyToChildScopes`
