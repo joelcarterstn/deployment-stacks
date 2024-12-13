@@ -31,7 +31,7 @@ IP address resource (publicIP1 and publicIP2, respectively) in each respective g
 
 > NOTE: The Bicep template in this tutorial represents a simple example for training purposes; it is not meant to be a production-ready template. For more information on using modules, see [Bicep modules](/azure/azure-resource-manager/bicep/modules).
 
-Start by creating a Bicep module template named `main.bicep`` using [Visual Studio Code](https://code.visualstudio.com/) with
+Start by creating a Bicep module template named `main.bicep` using [Visual Studio Code](https://code.visualstudio.com/) with
 the [Bicep extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
 
 ```bicep
@@ -316,7 +316,7 @@ Following are the relevant `az stack sub create` parameters:
 - `deny-settings-apply-to-child-scopes`: Deny settings will be applied to child Azure management scopes
 - `deny-settings-excluded-actions`: List of role-based access control (RBAC) management operations excluded from the deny settings. Up to 200 actions are allowed
 
-To modify deny settings, [Azure Deployment Stack Owner](https://www.azadvertizer.net/azrolesadvertizer/adb29209-aa1d-457b-a786-c913953d2891.html) RBAC is required. Note: The required `Microsoft.Resources/deploymentStacks/manageDenySetting/action operation` is contained in the NotActions of Contributor.
+To modify deny settings, [Azure Deployment Stack Owner](https://www.azadvertizer.net/azrolesadvertizer/adb29209-aa1d-457b-a786-c913953d2891.html) RBAC is required. Note: The required `Microsoft.Resources/deploymentStacks/manageDenySetting/action operation` exists in the NotActions of the Contributor built-in role.
 
 To apply a `denyDelete` lock to your deployment stack, update your deployment stack definition,
 specifying the appropriate parameter(s):
