@@ -340,9 +340,9 @@ To manage deployment stack deny assignments with Azure PowerShell, include one o
 
 The Azure PowerShell interface also includes these parameters to customize the deny assignment:
 
-- `-DenySettingsExcludedPrincipals`
+- `-DenySettingsExcludedPrincipal`
 - `-DenySettingsApplyToChildScopes`
-- `-DenySettingsExcludedActions`
+- `-DenySettingsExcludedAction`
 
 ```powershell
 New-AzSubscriptionDeploymentStack -Name 'mySubStack' `
